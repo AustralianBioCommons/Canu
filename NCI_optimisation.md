@@ -1,4 +1,4 @@
-# *Compute infrastructure name* optimisation **LINK FROM TOOL.md or WORKFLOW.md**
+# *National Computational Infrastructure* optimisation **LINK FROM TOOL.md or WORKFLOW.md**
 
 ## Exemplar: e.g. *Acacia pycnantha Benth. (golden wattle)* reference genome assembly
 
