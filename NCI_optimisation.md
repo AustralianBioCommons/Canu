@@ -1,20 +1,20 @@
-# *National Computational Infrastructure* optimisation **[Canu documentation](Canu.md)**
+## *National Computational Infrastructure* optimisation for **[Canu](Canu.md)**
 
-## Exemplar: e.g. *Acacia pycnantha Benth. (golden wattle)* reference genome assembly
+### Exemplar: e.g. *Acacia pycnantha Benth. (golden wattle)* reference genome assembly
 
-## Tutorial specific to infrastructure
+### Tutorial specific to infrastructure
 
-## How to access *Compute infrastructure name* 
+### How to access *Compute infrastructure name* 
 
 Includes straightforward signing in to *Compute infrastructure name*
 
-## How to install or access tool/workflow
+### How to install or access tool/workflow
 
-## Test existing or new installation
+### Test existing or new installation
 
-## Optimisation required at infrastructure
+### Optimisation required at infrastructure
 
-## Infrastructure usage metrics
+### Infrastructure usage metrics
 
-## Freeform section
+### Freeform section
 
