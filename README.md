@@ -1,13 +1,6 @@
-# Australian BioCommons Documentation Guidelines
+## Canu *de novo* assembler
 
-This repository contains a set of guidelines for bioinformatics tools and workflows. 
+This repository contains structured documentation for [Canu](Canu.md), including links to existing repositories and community resources, as well as a description of the optimisations achieved at the following HPC centres:
 
-The initial version uploaded to GitHub was informed by current documentation practices and structures used in the GitHub community.
-
-These guidelines will be further developed as needed to meet the requirements of the Australian BioCommons community.
-
-
-### Find us
-
-Github: https://github.com/AustralianBioCommons/documentation_guidelines
+- [National Computational Infrastructure](NCI_optimisation.md) (Australian National University, Canberra, Australia)
 
