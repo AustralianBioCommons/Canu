@@ -1,8 +1,8 @@
 # *Compute infrastructure name* optimisation **LINK FROM TOOL.md or WORKFLOW.md**
 
-## Exemplar: e.g. *Genus species* reference genome assembly
+## Exemplar: e.g. *Acacia pycnantha Benth. (golden wattle)* reference genome assembly
 
-## Workflow tutorial specific to infrastructure
+## Tutorial specific to infrastructure
 
 ## How to access *Compute infrastructure name* and install workflow
 
