@@ -32,9 +32,9 @@ Additional options of relevance to running at NCI are:
   of time for the management tasks that canu runs to manage the
   assembly process;
 - `gridOptions="-q normal -lwd -P <projectid>
-  -lstorage=<storage-options>"` indicates the NCI projectid and any
+  -lstorage=<storage-options>"` specifies the NCI project and any
   storage options that should be used (see
-  [here](https://opus.nci.org.au/display/Help/Gadi+Frequently+Asked+Questions#GadiFrequentlyAskedQuestions-Iaddedthenew`-lstorage=`linetomyjobsubmissionscript.Whyitdoesn'twork?)).
+  [here](https://opus.nci.org.au/display/Help/Gadi+Frequently+Asked+Questions#GadiFrequentlyAskedQuestions-Iaddedthenew`-lstorage=`linetomyjobsubmissionscript.Whyitdoesn'twork?) for information on the storage option).
 
 ### Exemplar: e.g. *Acacia pycnantha Benth. (golden wattle)* reference genome assembly
 
