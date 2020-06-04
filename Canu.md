@@ -10,6 +10,21 @@ Or:
 
 - Link(s) to the available information / documentation
 
+Canu assemblys are long and computational time consuming involving
+multiple separate sub tasks. Canu has its own method of managing this
+long running workflow and has provisions for submitting jobs to
+multiple different HPC queue systems. The system is restartable and
+able to resume assemblies when errors occur.
+
+Each stage of processing typically consists of submitting one or more
+worker scripts along with an executive/management script that executes
+after all workers are finished. This management script sets up the
+next stage. The jobs submitted may consist of array jobs and canu
+makes assumptions about the size of the jobs that can a cluster can
+execute based on the total resources available within the cluster. The
+assumptions may not be correct in a large, multiuser HPC facility.
+
+
 ### Link(s)
 
 ### Inputs(s)
