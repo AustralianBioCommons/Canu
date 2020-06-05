@@ -66,7 +66,7 @@ An example PBSPro job submission script for Canu at NCI is shown below. **NOTE**
     -p canu_assembly \
     genomeSize=100m \
     useGrid=true \
-    gridEngineSubmitCommand="/scratch/wz54/software/jobwrapper/jobwrapper.sh -j oe" \
+    gridEngineSubmitCommand="jobwrapper.sh -j oe" \
     gridEngine=pbspro \
     gridEngineResourceOption="-lncpus=THREADS,mem=MEMORY" \
     gridEngineNameToJobIDCommand="qstat -f |grep -F -B 1 WAIT_TAG | grep Id: | cut -c 9-" \
