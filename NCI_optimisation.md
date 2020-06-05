@@ -49,6 +49,9 @@ An example PBSPro job submission script for Canu at NCI is shown below. **NOTE**
 
 `-nanopore-raw my_raw_nanopore_reads.fasta.gz` with your read data. Note that this option will need to be changed to `-pacbio-raw my_pacbio.fastq.gz` if you are using pacbio data. 
 
+`gridOptions="-q normal -lwd -P wz54 -lstorage=scratch/wz54"` with your NCI project and storage options.
+
+<br/>
 
     #!/bin/bash
     #PBS -lncpus=10
