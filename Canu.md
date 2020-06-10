@@ -1,5 +1,6 @@
+# [Canu](https://github.com/marbl/canu)
 
-## Description
+## [Description](https://canu.readthedocs.io/en/latest/quick-start.html)
 
 Introduction of tool, including:
 
@@ -10,7 +11,7 @@ Or:
 
 - Link(s) to the available information / documentation
 
-Canu assemblys are long and computational time consuming involving
+Canu assemblies are long and computational time consuming involving
 multiple separate sub tasks. Canu has its own method of managing this
 long running workflow and has provisions for submitting jobs to
 multiple different HPC queue systems. The system is restartable and
@@ -27,42 +28,65 @@ assumptions may not be correct in a large, multiuser HPC facility.
 
 ### Link(s)
 
+- [Canu GitHub](https://github.com/marbl/canu)
+- [Canu readthedocs](https://canu.readthedocs.io/en/latest/)
+- [Celera assembler (not maintained)](http://wgs-assembler.sourceforge.net/wiki/index.php?title=Main_Page)
+
 ### Inputs(s)
 
-### Parameter(s)
+- [Canu (the command)](https://canu.readthedocs.io/en/latest/tutorial.html#canu-the-command)
+- [Input sequences can be FASTA or FASTQ format](https://canu.readthedocs.io/en/latest/quick-start.html)
+- [PacBio CLR or Nanopore](https://canu.readthedocs.io/en/latest/quick-start.html#assembling-pacbio-clr-or-nanopore-data)
+- [PacBio HiFi with HiCanu](https://canu.readthedocs.io/en/latest/quick-start.html#assembling-pacbio-hifi-with-hicanu)
+- [Multiple sequencing technologies & files](https://canu.readthedocs.io/en/latest/quick-start.html#assembling-with-multiple-technologies-and-multiple-files)
 
-### Output(s)
+### [Parameter(s)](https://canu.readthedocs.io/en/latest/parameter-reference.html)
 
-## Diagram
+### [Output(s)](https://canu.readthedocs.io/en/latest/tutorial.html#outputs)
 
-Logical visual description of processing steps for tool, e.g. for pipelines shipped as packages (Falcon, Cellranger, ..)
+## [Diagram](https://canu.readthedocs.io/en/latest/pipeline.html)
 
-## Version notes
+## [Version notes](https://github.com/marbl/canu/releases)
 
 Any comment on major features being introduced, or default/API changes that might result in unexpected behaviours.
 
-### Containerised version(s)
+### [Containerised version(s)](https://quay.io/repository/biocontainers/canu)
 
-Which public registry (Biocontainers, Docker, ..)
+Biocontainers.
 
-Any notes on tagging conventions
+Any notes on tagging conventions?
 
 ## Third party tools links
 
-## Tutorials
+## [Tutorial(s)](https://canu.readthedocs.io/en/latest/tutorial.html)
 
 ## Tool infrastructure requirements
 
 ### Scheduler
 
+- [Grid engine support](https://canu.readthedocs.io/en/latest/parameter-reference.html#grid-engine-support)
+- [FAQ: How do I run Canu on my SLURM / SGE / PBS / LSF / Torque system?](https://canu.readthedocs.io/en/latest/faq.html#how-do-i-run-canu-on-my-slurm-sge-pbs-lsf-torque-system)
+
 ### Hardware
 
-## Tool Install
+- [FAQ question about assembly resources](https://canu.readthedocs.io/en/latest/faq.html#what-resources-does-canu-require-for-a-bacterial-genome-assembly-a-mammalian-assembly)
 
-## *Compute infrastructure name* optimisation (**LINK**)
+## [Tool Install](https://github.com/marbl/canu#install)
+
+## [*National Computational Infrastructure* optimisation](NCI_optimisation.md)
 
 ## Help / FAQ / Troubleshooting
 
-## Licence
+- [Canu FAQ (readthedocs)](https://canu.readthedocs.io/en/latest/faq.html)
+- [BioStars Canu search](https://www.biostars.org/local/search/page/?q=canu)
+- [Long read assembly workshop (Melbourne Bioinformatics)](https://www.melbournebioinformatics.org.au/tutorials/tutorials/pacbio/)
+
+## Licence(s)
+
+- [GPL](https://github.com/marbl/canu/blob/master/README.license.GPL)
+- [Other](https://github.com/marbl/canu/blob/master/README.licenses)
 
 ## Acknowledgements / citations / credits
+
+- [Citation (README)](https://github.com/marbl/canu#citation)
+- [Canu History (readthedocs)](https://canu.readthedocs.io/en/latest/history.html)
