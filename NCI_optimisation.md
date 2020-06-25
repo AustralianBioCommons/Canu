@@ -98,9 +98,67 @@ Additional options of relevance to running at NCI are:
 
 ### Infrastructure usage metrics
 
-#### Exemplar: e.g. *Acacia pycnantha Benth. (golden wattle)* reference genome assembly
+#### High level summary
 
-### Test existing or new installation
+|Tool|Version|Framework Initiative|Organism name|Genus species|Genome size (GB)|Hours required|Cores|Peak RAM|Drive required (GB)|Location|HPC|Month-Year|
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|Canu|1.9|OMG|Fat-tailed Dunnart|*Sminthopsis crassicaudata*||||||NCI|Gadi|07-2020|
+|Canu|1.9|OMG|Marsupial Mole|*Notoryctes typhlops*||||||NCI|Gadi|07-2020|
+|Canu|1.9|GAP|Waratah|*Telopea speciosissima*|0.89|136|4-480 depending on job - total 3732 across jobs|1059|max 61.69|NCI|Gadi|06-2020|
+|Canu|1.9|GAP|Golden Wattle|*Acacia pycnantha Benth.*|1|72| | | |NCI|Gadi|05-2020|
+
+#### Exemplar assemblies
+
+##### **Fat-tailed Dunnart** (*Sminthopsis crassicaudata*)
+
+Available soon!
+
+##### **Marsupial Mole** (*Notoryctes typhlops*)
+
+Available soon!
+
+##### **Waratah** (*Telopea speciosissima*)
+
+Waratah assembly used all three phases of the Canu pipeline: 'correct', 'trim', and 'assemble'.
+
+|Field|Canu|Flye|Necat|
+|-------|:-----:|:-----:|:-----:|
+|Total number of sequences| 3,983 | 2,524 | 365 |    
+|Total length of sequences (bp)| 981,953,849 | 855,765,535 | 842,143,239 |  
+|Min. length of sequences (bp)| 1,138 | 496 | 563 |  
+|Max. length of sequences (bp)| 12,971,499 | 12,592,574 | 37,347,493 |    
+|Mean length of sequences (bp)| 246,536 | 339,051 | 2,307,242 |  
+|Median length of sequences (bp)| 58,209 | 22,950 | 155,267 |
+|N50 length of sequences (bp)| 1,848,137 | 2,588,707 | 10,701,597 |
+|L50 count of sequences| 132 | 92 | 24 |
+|GC content (%)| 39.95 | 40.47 | 40.15 |
+|BUSCO (n=1440)| C:78.4%[S:68.6%,D:9.8%], F:5.2%, M:16.4% | C:80.6%[S:74.2%,D:6.4%], F:4.2%, M:15.2% | C:81.2%[S:75.2%,D:6.0%], F:4.3%, M:14.5% |
+
+##### **Golden Wattle** (*Acacia pycnantha Benth.*)
+
+Canu jobs submitted to Gadi for Golden Wattle. **NOTE**: only the 'trim' and 'assemble' phases of the Canu pipeline are included in the metrics below. The first phase, 'correction', was carried out prior to assembly at NCI. 
+
+`Canu request` ---- `Submitted task`
+
+|directory|task|#tasks|cores/task|#tasks\*cores/task|memory/task (GB)|----|queue|#cores|slots|memory (GB)|walltime (hh:mm:ss)|SU|Efficiency|
+|----|----|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+|trimming/0-mercounts| meryl-count.sh |6|8|48|18|----|normal|48|6|192|0:51:35|83|0.44|
+|trimming/0-mercounts| meryl-process.sh |1|8|8|32|----|normal|8|1|32|0:33:12|9|0.48|
+|trimming/1-overlapper| overlap.sh |158|16|2528|16|----|normal|480|30|1920|12:28:19|11973|0.82|
+|unitigging/0-mercounts| meryl-count.sh |4|8|32|26|----|normal|32|4|128|0:47:30|51|0.23|
+|unitigging/0-mercounts| meryl-process.sh |1|8|8|32|----|normal|8|1|32|0:09:35|3|0.96|
+|unitigging/1-overlapper| overlap.sh |149|16|2384|16|----|normal|480|30|1920|17:49:19|17109|0.81|
+|unitigging/canu_assembly.ovlStore| 1-bucketize.sh |2|1|2|4|----|normal|2|2|8|0:02:38|0.77|
+|unitigging/canu_assembly.ovlStore| 2-sort.sh |2|1|2|27|----|hugemem|2|2|54|0:06:34|1|0.55|
+|unitigging/3-overlapErrorAdjustment| red.sh |126|8|1008|32|----|normal|480|60|1920|0:30:15|484|0.59|
+|unitigging/3-overlapErrorAdjustment| oea.sh |102|1|102|10|----|hugemem|96|96|1020|1:58:50|570|0.57|
+|unitigging/4-unitigger| unitigger.sh |1|16|16|256|----|hugemem|16|1|256|
+|unitigging/5-consensus| consensus.sh |181|8|1448|7|----|normal|480|60|1920|0:28:00|448|0.17|
+|unitigging/4-unitigger| alignGFA.sh |1|16|16|32|----|normal|16|1|32|00:26:39|14|0.21|
+
+
+
+
 
 ### Freeform section
 
