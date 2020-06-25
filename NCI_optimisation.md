@@ -41,7 +41,7 @@ An example PBSPro job submission script for Canu at NCI is shown below.
     #PBS -N my-canu-run
     #PBS -q normal
 
-    module load canu/2.0
+    module load canu/1.9
 
     canu -correct-trim-assemble \
     -p canu_assembly \
