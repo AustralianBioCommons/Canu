@@ -102,6 +102,12 @@ Additional options of relevance to running at NCI are:
 
 ### Infrastructure usage metrics
 
+The table below indicates the resources used by a test assembly run at
+NCI during 2020Q2 using Canu version 1.9 and the jobwrapper script. The
+#tasks, cores/task and memory/task fields indicate the resources
+requested by Canu and the queue, #cores, and memory fields indicate
+the submitted job.
+
 |directory|task|#tasks|cores/task|memory/task (GB)|queue|#cores|memory (GB)|walltime (hh:mm:ss)|SU|
 |---------|----|------|----------|----------------|-----|------|-----------|-------------------|--|
 |trimming/0-mercounts  |meryl-count.sh|6|8|18     |normal|48   |192        |0:51:35           |83|
