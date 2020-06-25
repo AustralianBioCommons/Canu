@@ -79,7 +79,7 @@ a test assembly.
 To use the jobwrapper script instead of the qsub command the following
 option needs to be set when Canu is started:
 
-    gridEngineSubmitCommand="jobwrapper.sh -j oe"
+    gridEngineSubmitCommand="${CANU_BASE}/Linux-amd64/bin/jobwrapper.sh -j oe"
 
 Additional options of relevance to running at NCI are:
 
