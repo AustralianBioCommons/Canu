@@ -2,15 +2,6 @@
 
 ## [Description](https://canu.readthedocs.io/en/latest/quick-start.html)
 
-Introduction of tool, including:
-
-- Its input(s)/output(s)
-- List of available shell commands (useful when building interfaces/wrappers for containers)
-
-Or:
-
-- Link(s) to the available information / documentation
-
 Canu assemblies are long and computational time consuming involving
 multiple separate sub tasks. Canu has its own method of managing this
 long running workflow and has provisions for submitting jobs to
