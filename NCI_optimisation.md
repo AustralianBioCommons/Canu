@@ -102,11 +102,53 @@ Additional options of relevance to running at NCI are:
 
 ### Infrastructure usage metrics
 
+#### Exemplar: e.g. *Acacia pycnantha Benth. (golden wattle)* reference genome assembly
+=======
+##### High level summary
+
+|Tool|Version|Framework Initiative|Organism name|Genus species|Genome size (GB)|Hours required|Cores|Peak RAM|Drive required (GB)|Location|HPC|Month-Year|
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|Canu|1.9|OMG|Fat-tailed Dunnart|*Sminthopsis crassicaudata*||||||NCI|Gadi|07-2020|
+|Canu|1.9|OMG|Marsupial Mole|*Notoryctes typhlops*||||||NCI|Gadi|07-2020|
+|Canu|1.9|GAP|Waratah|*Telopea speciosissima*|0.89|136|4-480 depending on job - total 3732 across jobs|1059|max 61.69|NCI|Gadi|06-2020|
+|Canu|1.9|GAP|Golden Wattle|*Acacia pycnantha Benth.*|1|72| | | |NCI|Gadi|05-2020|
+
+##### Exemplar assemblies
+
+###### **Fat-tailed Dunnart** (*Sminthopsis crassicaudata*)
+
+Available soon!
+
+###### **Marsupial Mole** (*Notoryctes typhlops*)
+
+Available soon!
+
+###### **Waratah** (*Telopea speciosissima*)
+
+Waratah assembly used all three phases of the Canu pipeline: 'correct', 'trim', and 'assemble'.
+
+|Field|Canu|Flye|Necat|
+|-------|:-----:|:-----:|:-----:|
+|Total number of sequences| 3,983 | 2,524 | 365 |    
+|Total length of sequences (bp)| 981,953,849 | 855,765,535 | 842,143,239 |  
+|Min. length of sequences (bp)| 1,138 | 496 | 563 |  
+|Max. length of sequences (bp)| 12,971,499 | 12,592,574 | 37,347,493 |    
+|Mean length of sequences (bp)| 246,536 | 339,051 | 2,307,242 |  
+|Median length of sequences (bp)| 58,209 | 22,950 | 155,267 |
+|N50 length of sequences (bp)| 1,848,137 | 2,588,707 | 10,701,597 |
+|L50 count of sequences| 132 | 92 | 24 |
+|GC content (%)| 39.95 | 40.47 | 40.15 |
+|BUSCO (n=1440)| C:78.4%[S:68.6%,D:9.8%], F:5.2%, M:16.4% | C:80.6%[S:74.2%,D:6.4%], F:4.2%, M:15.2% | C:81.2%[S:75.2%,D:6.0%], F:4.3%, M:14.5% |
+
+###### **Golden Wattle** (*Acacia pycnantha Benth.*)
+
 The table below indicates the resources used by a test assembly run at
 NCI during 2020Q2 using Canu version 1.9 and the jobwrapper script. The
 #tasks, cores/task and memory/task fields indicate the resources
 requested by Canu and the queue, #cores, and memory fields indicate
 the submitted job.
+
+Canu jobs submitted to Gadi for Golden Wattle. **NOTE**: only the 'trim' and 'assemble' phases of the Canu pipeline are included in the metrics below. The first phase, 'correction', was carried out prior to assembly at NCI. 
 
 |directory|task|#tasks|cores/task|memory/task (GB)|queue|#cores|memory (GB)|walltime (hh:mm:ss)|SU|
 |---------|----|------|----------|----------------|-----|------|-----------|-------------------|--|
@@ -123,10 +165,6 @@ the submitted job.
 |unitigging/4-unitigger|unitigger.sh|1|16|256     |hugemem|16  |256        |                  ||
 |unitigging/5-consensus|consensus.sh|181|8|7      |normal|480  |1920       |0:28:00           |448|
 |unitigging/4-unitigger|alignGFA.sh|1|16|32       |normal|16   |32         |00:26:39          |14|
-
-#### Exemplar: e.g. *Acacia pycnantha Benth. (golden wattle)* reference genome assembly
-
-### Test existing or new installation
 
 ### Freeform section
 
