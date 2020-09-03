@@ -8,7 +8,7 @@ accessed with the command:
     module load canu/1.9
 
 Included in the system module is the jobwrapper script described
-above. Canu uses the minimap2 assembler which has also been installed
+below. Canu uses the minimap2 assembler which has also been installed
 as a system module and is available through
 
     module load minimap2/2.17
@@ -50,7 +50,7 @@ An example PBSPro job submission script for Canu at NCI is shown below.
         gridEngineSubmitCommand="${CANU_BASE}/Linux-amd64/bin/jobwrapper.sh -j oe" \
         gridEngine=pbspro \
         gridEngineResourceOption="-lncpus=THREADS,mem=MEMORY" \
-        stageDirectory=\$PBS_JOBFS \
+        stageDirectory=\$PBS_JOBFS/\$PBS_ARRAY_INDEX \
         gridEngineStageOption="-ljobfs=DISK_SPACEGB" \
         gridEngineArrayMaxJobs=500 \
         gridOptionsExecutive="-lwalltime=4:00:00" \
