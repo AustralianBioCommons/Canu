@@ -72,9 +72,11 @@ Any notes on tagging conventions?
 - [BioStars Canu search](https://www.biostars.org/local/search/page/?q=canu)
 - [Long read assembly workshop (Melbourne Bioinformatics)](https://www.melbournebioinformatics.org.au/tutorials/tutorials/pacbio/)
 
-### How does the BioCommons optimised Canu compare with vanilla Canu?
+### How does the BioCommons optimised Canu compare with Canu?
 
-Vanilla Canu uses a non-deterministic algorithm, meaning that it is normal to expect slightly different assemblies with multiple runs of Canu, using the exact same inputs and parameters, as [discussed here on Canu's github page](https://github.com/marbl/canu/issues/1013). 
+Canu uses a non-deterministic algorithm, meaning that it is normal to expect slightly different assemblies with multiple runs of Canu, using the exact same inputs and parameters, as [discussed here on Canu's github page](https://github.com/marbl/canu/issues/1013). 
+
+The table below are assembly metrics for wheat stem rust samples (Plant Breeding Institute, University of Sydney) obtained from Canu and BioCommons Canu runs performed on NCI Gadi. The assembly metrics are similar for both runs. 
 
 |Statistic|Canu|BioCommons Canu|
 |---------|----|------|
