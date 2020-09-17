@@ -72,6 +72,25 @@ Any notes on tagging conventions?
 - [BioStars Canu search](https://www.biostars.org/local/search/page/?q=canu)
 - [Long read assembly workshop (Melbourne Bioinformatics)](https://www.melbournebioinformatics.org.au/tutorials/tutorials/pacbio/)
 
+### How does the BioCommons optimised Canu compare with vanilla Canu?
+
+Vanilla Canu uses a non-deterministic algorithm, meaning that it is normal to expect slightly different assemblies with multiple runs of Canu, using the exact same inputs and parameters, as [discussed here on Canu's github page](https://github.com/marbl/canu/issues/1013). 
+
+|Statistic|Canu|BioCommons Canu|
+|---------|----|------|
+|Genome Size	|309.91 MB	|301.68 MB|
+|Total Contigs	|2133	|1549|
+|N/L50	|268/280.00 KB	|139/493.54 KB|
+|N/L90	|1302/59.30 KB	|771/72.08 KB|
+|Max contig length|	2.38 MB|	3.32 MB|
+|% contigs > 50 KB|	93.57%|	94.32%|
+|GC Content	|41.64%|	41.57%|
+|Complete BUSCOs|	87.50%|	87.10%|
+|Complete and single-copy BUSCOs|	12.60%|	9.60%|
+|Complete and duplicated BUSCOs|	74.90%|	77.50%|
+|Fragmented BUSCOs|	4.90%|	4.80%|
+|Missing BUSCOs|	7.60%|	8.10%|
+
 ## Licence(s)
 
 - [GPL](https://github.com/marbl/canu/blob/master/README.license.GPL)
