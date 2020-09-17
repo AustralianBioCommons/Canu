@@ -164,5 +164,24 @@ Canu jobs submitted to Gadi for Golden Wattle. **NOTE**: only the 'trim' and 'as
 |unitigging/5-consensus|consensus.sh|181|8|7      |normal|480  |1920       |0:28:00           |448|
 |unitigging/4-unitigger|alignGFA.sh|1|16|32       |normal|16   |32         |00:26:39          |14|
 
+### Infrastructure benchmarking
+
+The table below are assembly metrics for wheat stem rust samples (Plant Breeding Institute, University of Sydney) obtained from Canu and BioCommons Canu runs performed on NCI Gadi. The assembly metrics are similar for both runs. 
+
+|Statistic|Canu|BioCommons Canu|
+|---------|----|------|
+|Genome Size	|309.91 MB	|301.68 MB|
+|Total Contigs	|2133	|1549|
+|N/L50	|268/280.00 KB	|139/493.54 KB|
+|N/L90	|1302/59.30 KB	|771/72.08 KB|
+|Max contig length|	2.38 MB|	3.32 MB|
+|% contigs > 50 KB|	93.57%|	94.32%|
+|GC Content	|41.64%|	41.57%|
+|Complete BUSCOs|	87.50%|	87.10%|
+|Complete and single-copy BUSCOs|	12.60%|	9.60%|
+|Complete and duplicated BUSCOs|	74.90%|	77.50%|
+|Fragmented BUSCOs|	4.90%|	4.80%|
+|Missing BUSCOs|	7.60%|	8.10%|
+
 ### Freeform section
 
