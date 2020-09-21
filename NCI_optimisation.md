@@ -166,7 +166,7 @@ Canu jobs submitted to Gadi for Golden Wattle. **NOTE**: only the 'trim' and 'as
 
 ### Infrastructure benchmarking
 
-The table below are assembly metrics for wheat stem rust samples (Plant Breeding Institute, University of Sydney) obtained from Canu and BioCommons Canu runs performed on NCI Gadi. The assembly metrics are similar for both runs. 
+The table below are assembly metrics for barley leaf rust samples (Plant Breeding Institute, University of Sydney) obtained from Canu and BioCommons Canu runs performed on NCI Gadi. The assembly metrics are similar for both runs. 
 
 |Statistic|Canu|BioCommons Canu|
 |---------|----|------|
