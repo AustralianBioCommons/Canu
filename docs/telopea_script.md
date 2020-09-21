@@ -1,3 +1,4 @@
+```
 ONTREADS=/scratch/vw17/sc4781/Telopea-Aug19/data/2020-01-15.TspeNanoporeTrimmed/tspe-porechop-filt.fastq
 OUTDIR=/scratch/vw17/sc4781/Telopea-Aug19/assembly/2020-05-22.TspeCanu/
 
@@ -12,3 +13,4 @@ gridEngineArrayMaxJobs=500 \
 gridOptionsExecutive="-lwalltime=4:00:00" \
 gridOptions="-q normal -lwd -P wz54 -lstorage=scratch/vw17+scratch/wz54" \
 stageDirectory=\$PBS_JOBFS
+```
