@@ -123,7 +123,8 @@ Available soon!
 
 ##### **Waratah** (*Telopea speciosissima*)
 
-Waratah assembly used all three phases of the Canu pipeline: 'correct', 'trim', and 'assemble'.
+- Waratah assembly used all three phases of the Canu pipeline: 'correct', 'trim', and 'assemble'.
+- See script used [here](docs/telopea_script.sh).
 
 |Field|Canu|Flye|Necat|
 |-------|:-----:|:-----:|:-----:|
