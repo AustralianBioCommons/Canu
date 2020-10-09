@@ -1,6 +1,6 @@
-## *National Computational Infrastructure* optimisation for **[Canu](Canu.md)**
+# **[Canu](Canu.md)** on Gadi @ the *National Computational Infrastructure* 
 
-### Accessing canu
+## Accessing canu
 
 Canu (version 1.9) has been installed as a system module and can be
 accessed with the command:
@@ -13,7 +13,7 @@ as a system module and is available through
 
     module load minimap2/2.17
     
-### Quick start tutorial specific to Gadi @ NCI
+## Quick start tutorial specific to Gadi @ NCI
 
 An example PBSPro job submission script for Canu at NCI is shown below. 
 
@@ -62,7 +62,7 @@ The `-p` option given to Canu sets the prefix of the assembly
 filenames, while the `-d` option indicates the directory in which the
 assembly is run.
 
-### Infrastructure specific optimisation
+## Optimisation required
 
 The workflow management system of Canu relies on the use of array jobs
 to process sub-tasks within each stage of processing. To reduce the
@@ -100,28 +100,19 @@ Additional options of relevance to running at NCI are:
   storage options that should be used (see
   [here](https://opus.nci.org.au/display/Help/Gadi+Frequently+Asked+Questions#GadiFrequentlyAskedQuestions-Iaddedthenew`-lstorage=`linetomyjobsubmissionscript.Whyitdoesn'twork?) for information on the storage option).
 
-### Infrastructure usage metrics
+## Infrastructure usage and benchmarking
 
-#### High level summary
+### Summary
 
-|Tool|Version|Framework Initiative|Organism name|Genus species|Genome size (GB)|Hours required|Cores|Peak RAM|Drive required (GB)|Location|HPC|Month-Year|
-|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-|Canu|1.9|OMG|Fat-tailed Dunnart|*Sminthopsis crassicaudata*||||||NCI|Gadi|07-2020|
-|Canu|1.9|OMG|Marsupial Mole|*Notoryctes typhlops*||||||NCI|Gadi|07-2020|
-|Canu|1.9|GAP|Waratah|*Telopea speciosissima*|0.89|136|4-480 depending on job - total 3732 across jobs|1059|max 61.69|NCI|Gadi|06-2020|
-|Canu|1.9|GAP|Golden Wattle|*Acacia pycnantha Benth.*|1|72| | | |NCI|Gadi|05-2020|
-
-#### Exemplar assemblies
-
-##### **Fat-tailed Dunnart** (*Sminthopsis crassicaudata*)
+### Exemplar: **Fat-tailed Dunnart** (*Sminthopsis crassicaudata*)
 
 Available soon!
 
-##### **Marsupial Mole** (*Notoryctes typhlops*)
+### Exemplar: **Marsupial Mole** (*Notoryctes typhlops*)
 
 Available soon!
 
-##### **Waratah** (*Telopea speciosissima*)
+### Exemplar: **Waratah** (*Telopea speciosissima*)
 
 - Waratah assembly used all three phases of the Canu pipeline: 'correct', 'trim', and 'assemble'.
 - See script used [here](docs/telopea_script.sh).
@@ -139,7 +130,7 @@ Available soon!
 |GC content (%)| 39.95 | 40.47 | 40.15 |
 |BUSCO (n=1440)| C:78.4%[S:68.6%,D:9.8%], F:5.2%, M:16.4% | C:80.6%[S:74.2%,D:6.4%], F:4.2%, M:15.2% | C:81.2%[S:75.2%,D:6.0%], F:4.3%, M:14.5% |
 
-##### **Golden Wattle** (*Acacia pycnantha Benth.*)
+### Exemplar: **Golden Wattle** (*Acacia pycnantha Benth.*)
 
 The table below indicates the resources used by a test assembly run at
 NCI during 2020Q2 using Canu version 1.9 and the jobwrapper script. The
@@ -184,5 +175,5 @@ The table below are assembly metrics for barley leaf rust samples (Plant Breedin
 |Fragmented BUSCOs|	4.90%|	4.80%|
 |Missing BUSCOs|	7.60%|	8.10%|
 
-### Freeform section
+## Acknowledgements / citations / credits
 
