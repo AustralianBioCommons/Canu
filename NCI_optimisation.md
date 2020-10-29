@@ -102,6 +102,8 @@ Additional options of relevance to running at NCI are:
 
 ## Infrastructure usage and benchmarking
 
+You can collect usage metrics from your Canu run using the NCI Gadi optimised workflow using scripts available on the [Sydney Informatics Hub, University of Sydney GitHub repository](https://github.com/Sydney-Informatics-Hub/BioCommons-Canu-Metrics).
+
 ### Summary
 
 ### Exemplar: **Fat-tailed Dunnart** (*Sminthopsis crassicaudata*)
