@@ -46,6 +46,8 @@ assumptions may not be correct in a large, multiuser HPC facility.
 
 # Usage
 
+Resource metrics can be collected using scripts available on the Sydney Informatics Hub, [University of Sydney's GitHub repository](https://github.com/Sydney-Informatics-Hub/BioCommons-Canu-Metrics).
+
 ## Summary
 
 | Version | Infrastructure | Scheduler | Workflow manager | Container | Install method |
@@ -87,7 +89,7 @@ Any comment on major features being introduced, or default/API changes that migh
 
 Canu uses a non-deterministic algorithm, meaning that it is normal to expect slightly different assemblies with multiple runs of the same version of Canu, using the exact same inputs and parameters, as [discussed here on Canu's github page](https://github.com/marbl/canu/issues/1013). 
 
-A comparison of assembly metrics obtained for Canu and BioCommons Canu was performed for a Wheat Stem Rust sample and is available on our [NCI optimisation page](https://github.com/AustralianBioCommons/Canu/blob/master/NCI_optimisation.md)
+A comparison of assembly metrics obtained for Canu and BioCommons Canu was performed for a Barley leaf rust sample and is available on our [NCI optimisation page](https://github.com/AustralianBioCommons/Canu/blob/master/NCI_optimisation.md)
 
 # Licence(s)
 
