@@ -179,3 +179,6 @@ The table below are assembly metrics for barley leaf rust samples (Plant Breedin
 
 ## Acknowledgements / citations / credits
 
+### Genomics for Australian Plants
+
+We would like to acknowledge the contribution of the [Genomics for Australian Plants Framework Initiative consortium](https://www.genomicsforaustralianplants.com/consortium/) in the generation of data used in this workflow. The Initiative is supported by funding from Bioplatforms Australia (enabled by NCRIS), the Ian Potter Foundation, Royal Botanic Gardens Victoria, the Royal Botanic Gardens and Domain Trust, CSIRO, Centre for Australian National Biodiversity Research and the Department of Biodiversity, Conservation and Attractions, Western Australia.
