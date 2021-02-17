@@ -87,7 +87,7 @@ Additional options of relevance to running at NCI are:
 - `gridEngineResourceOption="-lncpus=THREADS,mem=MEMORY"` formats
   resource requests correctly for NCI job submission;
 - `stageDirectory=\$PBS_JOBFS` tells canu the correct location for
-  on-node scrath space;
+  on-node scratch space;
 - `gridEngineStageOption="-ljobfs=DISKSPACEGB"` formats requests for
   on-node scratch space correctly;
 - `gridEngineArrayMaxJobs=500` indicates the maximum number of tasks
