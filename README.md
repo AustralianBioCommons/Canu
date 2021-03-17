@@ -1,7 +1,7 @@
 ## Canu *de novo* assembler
 
-This repository contains structured documentation for [Canu](Canu.md), including links to existing repositories and community resources, as well as a description of the optimisations achieved at the following HPC centres:
+This repository contains structured documentation for [Canu](Canu.md), including links to existing repositories and community resources, as well as a description of the optimisations achieved on the following compute systems:
 
-- [National Computational Infrastructure](NCI_optimisation.md) (Australian National University, Canberra, Australia)
-- [Queensland Cyber Infrastructure Foundation (QCIF) | University of Queensland - Research Computing Centre (RCC)](docs/infrastructure_flashlite.md) (Australian National University, Canberra, Australia)
+- [Gadi](NCI_optimisation.md) (National Computational Infrastructure, Australian National University, Canberra, Australia)
+- [FlashLite](docs/infrastructure_flashlite.md) (Queensland Cyber Infrastructure Foundation (QCIF) | University of Queensland - Research Computing Centre \[RCC])
 
