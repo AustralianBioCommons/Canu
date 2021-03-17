@@ -64,13 +64,13 @@ The downloaded file
 1.  Extract the contents of
     `79639_PAE71863_GAP_AGRF_ONTPromethION_fastq_pass.tar`. This
     contains 18 `fastq.tar` files, each of which contains
-    `20200325_GAP_AGRF_PAE71863/20200325_GAP_AGRF_PAE71863/79639_GAP_AGRF_PAE71863_fastq_pass/`
-    `PAE71863_pass_subset_00\<NUMBER>.fastq/`
-    `PAE71863_pass_8bb8d7e2_<NUMBER>.fastq.gz`
+    1. `20200325_GAP_AGRF_PAE71863/20200325_GAP_AGRF_PAE71863/79639_GAP_AGRF_PAE71863_fastq_pass/`
+    2. `PAE71863_pass_subset_<NUMBER>.fastq/`
+    3. `PAE71863_pass_8bb8d7e2_<NUMBER>.fastq.gz`
 2.  Create an interactive job to extract and concatenate the fastq files
     within the tar files. For example (substitute `qris-jcu` with your
-    accounting group) `qsub -I -A qris-jcu -l select=1:ncpus=2:mem=8g -l walltime=6:00:00`
-3.  Extract contents of tar files: `for i in *.fastq.tar; do echo "extracting $i"; tar -xvf $i; done`
+    accounting group): `qsub -I -A qris-jcu -l select=1:ncpus=2:mem=8g -l walltime=6:00:00`
+3.  Extract contents of tar files with `for i in *.fastq.tar; do echo "extracting $i"; tar -xvf $i; done`
     and move these into the top level directory: `for d in *; do mv $d/* .; rmdir $d; done`
 4.  Create a single fastq file from the numerically ordered files with:
     `cat $(ls -1v) > ../PAE71863_pass_8bb8d7e2.fastq.gz` This creates a
